@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "element",
+  "description":"",
+  "version": "0.1",
+  "icons": { "128": "icon.png" },
+  "author": "Kadai",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+  },
+  "permissions": [
+    "notifications",
+    "storage",
+    "*://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["assets/js/jquery-2.1.0.min.js", "assets/js/vue.js", "element.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "icon.png"
+  ]
+}
