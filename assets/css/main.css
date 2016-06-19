@@ -1,0 +1,35 @@
+
+.main_btn {
+  width: 100%;
+  margin-left: 5%;
+}
+
+.icon {
+  max-width: 24px;
+}
+
+.triangle {
+  position: relative;
+  border-color: transparent transparent #a7dcff transparent;
+  border-style: solid solid solid solid;
+  border-width: 13px;
+  left: 20px;
+  top: -29px;
+  height: 0px;
+  width: 0px;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  left: 6%;
+  border-color: #a7dcff;
+  border-style: solid;
+  border-radius: 10px;
+  width: 300px;
+  height: auto;
+  background-color: rgba(255,255,255,1);
+  z-index: 1;
+  display: none;
+  margin-top: 20px;
+}
